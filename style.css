@@ -1,0 +1,141 @@
+/*Import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+/*Set global variables*/
+:root {
+  --primary-bg: #E6EFF5;
+  --primary-teal: #2AB3B1;
+  --accent-brightgreen: #C0DF33;
+  --neutral-white: #FFFFFF;
+  --body-txt-gray: #9AA7BE;
+  --font-wt-normal: 400;
+  --font-wt-semibold: 700;
+  --font-sz-step0: 14px;
+  --font-sz-step1: 16px;
+  --font-sz-step2: 18px;
+  --font-sz-step3: 24px;
+}
+
+/*Zero out defaults*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primary-bg);
+  font-family: Karla, sans-serif;
+  font-weight: var(--font-wt-normal);
+  color: var(--body-txt-gray);
+  font-size: var(--font-sz-step1);
+  line-height: 26px;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article {
+  background-color: var(--neutral-white);
+}
+
+h1 {
+  font-weight: var(--font-wt-semibold);
+  color: var(--primary-teal);
+  font-size: var(--font-sz-step3);
+  /*font-size - clamp me?*/
+}
+
+h2 {
+  font-weight: var(--font-wt-semibold);
+  font-size: var(--font-sz-step2);
+  /*font-size - clamp me?*/
+  margin-bottom: 1.125rem;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  width: 100%;
+  height: 3rem;
+  background-color: var(--accent-brightgreen);
+  color: var(--neutral-white);
+  border: none;
+  font-size: var(--font-sz-step1);
+  
+}
+
+.intro {
+  padding: 40px;
+  /*CLAMP ME*/
+}
+
+.guarantee {
+  font-weight: var(--font-wt-semibold);
+  color: var(--accent-brightgreen);
+  font-size: var(--font-sz-step2);
+  /*font-size - clamp me?*/
+  margin: 1.5rem 0 0.75rem 0;
+}
+
+.details {
+  background-color: var(--primary-teal);
+  color: var(--neutral-white);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(311px, 1fr));
+}
+
+.cost, .benefits {
+  padding: clamp(1.5rem, 1.15rem + 1.5vw, 2.5rem);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  column-gap: 0.75rem;
+}
+
+.dollars {
+  font-size: calc(2 * var(--font-sz-step1));
+}
+
+.monthly {
+  opacity: 0.5;
+}
+
+.benefits {
+  background-color: var(--primary-teal);
+  position: relative;
+}
+
+.benefits::before {
+  content: "";
+  background-color: var(--neutral-white);
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*right: 0;*/
+  /*bottom: 0;*/
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: normal;
+  opacity: 0.15;
+}
+
+.benefits-txt {
+  isolation: isolate;
+  color: var(--neutral-white);
+  z-index: 20;
+}
+
+.benefits-list {
+  font-size: var(--font-sz-step0);
+  opacity: 0.75;
+}
