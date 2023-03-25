@@ -15,7 +15,7 @@ $font-wt-bold: 700;
 $font-sz-base: 16px;
 $body-txt-lnht: 26px;
 
-//Responsive typography
+//Fluid typography
 $body-font-sz: clamp(calc(#{$font-sz-base} - calc(#{$font-sz-base} * 0.125)), calc(0.83125 * #{$font-sz-base}) + 0.19vw, #{$font-sz-base});
 $h1-font-sz: clamp(calc($font-sz-base * 1.25), calc(1.1625 * $font-sz-base) + 0.375vw, calc($font-sz-base * 1.5));
 $h2-font-sz: calc($font-sz-base * 1.125);
