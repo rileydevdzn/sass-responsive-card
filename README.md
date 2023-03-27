@@ -1,7 +1,7 @@
 <div align="center">
   <img 
-    src=""
-    alt=""
+    src="./price component SASS.png"
+    alt="Single price component card"
     height="350px">
 </div>
 
@@ -30,14 +30,17 @@ Users should be able to:
 
 <div align="center">
   <img
-    src=""
+    src="./mobile-design.jpg"
     alt=""
     height="350px">
-  <img 
-    src=""
+  <p><em>Mobile design</em></p>
+</div>
+<div align="center">
+  <img
+    src="./price component hover.png"
     alt=""
     height="350px">
-  <p><em>Active and 'thank you' state designs</em></p>
+  <p><em>Hover state design</em></p>
 </div>
 
 ### Links
@@ -49,23 +52,26 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS variables
-- 
-- 
+- SASS
+- Creating a new stacking context, pseudo-elements, and `isolation` property for children inside a parent element with `mix-blend-mode`
+- Flexbox and Grid
 - Realistic workflow, building from professional Figma design files (design-to-code) 
 
 ### What I learned
 
+I'd used `mix-blend-mode` before to blend backgrounds, figuring out how to employ this property on a parent element (background div) without also affecting its children (text element) was an interesting challenge. I eventually solved it by applying to a pseudo-element, then creating a new stacking context and using the `isolation` property on the child elements.
+
+I also learned the basic syntax and functionality of SASS.
 
 
 ### Continued development
 
- 
+This was my first project using SASS. Once I got the hang of it, I enjoyed the syntax and plan to continue using it in future projects to explore additional capabilities. 
 
 ### Useful resources
 
-- [name]() - 
-- [name]() -
+- [SASS documentation](https://sass-lang.com/documentation/) - Official SASS documentation to deep-dive into capabilities. 
+- [freeCodeCamp SASS course](https://www.freecodecamp.org/learn/front-end-development-libraries/#sass) - Introductory short course on SASS with practical exercises to get used to the basic syntax.
 
 ## Author
 
