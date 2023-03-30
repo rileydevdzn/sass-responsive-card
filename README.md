@@ -45,7 +45,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Single price grid component](https://rileydevdzn.github.io/price-component-with-sass/)
+- Solution URL: [Single price grid component](https://rileydevdzn.github.io/sass-responsive-card/)
 
 ## My process
 
